@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge，chrome=1" />
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="./lib/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <style type="text/css">
+    .swiper-container {
+        width: 100%;
+        height: 500px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">臻善科技</div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="index active">首页</a></li>
+                <li class="nav-item"><a href="#">公司简介</a></li>
+                <li class="nav-item"><a href="#">公司业务</a></li>
+                <li class="nav-item"><a href="#">团队风采</a></li>
+                <li class="nav-item"><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="banner swiper-container">
+            <!-- Slider main container -->
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" data-swiper-autoplay="5000"><img src="./images/banner.png" />
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="5000"><img src="./images/banner.png" />
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination">
+            </div>
+        </div>
+        <div class="session">
+            <h2 class="session-title">Company Profile</h2>
+            <h3 class="session-subtitle">公司简介</h3>
+            <div style="overflow: hidden;">
+                <div class="part">
+                    <p class="part-title">臻善-为您提供业界领先·安全·稳定的数据安全产品</p>
+                    <span class="hr"></span>
+                    <p>臻善是深圳一家专注电商领域的科技公司，提供专业易用的电商系统来服务广大电商领域的从业者。 深圳是新业务方向，我们提供的是电商系统解决方案. 主要是以技术的力量推进电商领域的服务更加便捷；在美国、印度、南非、深圳、汕尾、广州都设有子公司或办事处。
+                    </p>
+                    <p>臻善目标是打造新一代的电商服务平台，未来将结合大数据、人工智能等务业务提供高灵活性和可扩展性，以及提供强大支持和无限扩展能力，全面优化电商业务整体效率以及便捷性，深度结合线下门店，为电商行业从业者创造更高的效益。
+                    </p>
+                </div>
+                <div class="part"><img src="./images/profile_zhaopian.png" />
+                </div>
+            </div>
+            <div class="company-value">
+                <div class="value-item">
+                    <div class="icon"><img src="./images/profile_yuanjing.png" />
+                    </div>
+                    <div class="item-content">
+                        <p class="item-name">公司愿景</p>
+                        <p class="item-info">打造新一代电商</p>
+                    </div>
+                </div>
+                <div class="value-item">
+                    <div class="icon"><img src="./images/profile_mubiao.png"  />
+
+                    </div>
+                    <div class="item-content">
+                        <p class="item-name">公司目标</p>
+                        <p class="item-info">为电商行业从业者创造更高的利益</p>
+                    </div>
+                </div>
+                <div class="value-item">
+                    <div class="icon"><img src="./images/profile_linian.png" />
+                    </div>
+                    <div class="item-content">
+                        <p class="item-name">公司理念</p>
+                        <p class="item-info">创新，共赢，责任，诚信</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="session">
+            <h2 class="session-title">Business layout</h2>
+            <h3 class="session-subtitle">业务布局</h3>
+            <div class="layout-item">
+                <h3 class="layout-title">电商平台解决方案</h3>
+                <span class="hr"></span>
+                <p class="layout-info">专业的企业级电商平台开发商，拥有多年的电商行业项目开发经验</p>
+                <p>对焦最典型、最热门的电商行业，为企业商家打造最符合业务发展需要的电商整体解决方案服务</p>
+                <div class="img-list">
+                    <div class="img-item">
+                        <img src="./images/layout_nongcun_tu.png" />
+                        <div class="cover">
+                            <img src="./images/layout_nongcun_ic.png" />
+                             <p class="desp1">农村电商解决方案</p>
+                            <span class="hr"></span>
+                            <p class="desp2">电商平台解决方案</p>
+                        </div>
+                    </div>
+                    <div class="img-item">
+                        <img src="./images/layout_shengxiann_tu.png" />
+                        <div class="cover">
+                            <img src="./images/layout_shengxiann_ic.png" />
+                            <p class="desp1">生鲜电商解决方案</p>
+                            <span class="hr"></span>
+                            <p class="desp2">电商平台解决方案</p>
+                        </div>
+                    </div>
+                    <div class="img-item">
+                        <img src="./images/layout_muying_tu.png" />
+                        <div class="cover">
+                            <img src="./images/layout_muying_ic.png" />
+                             <p class="desp1">母婴电商解决方案</p>
+                            <span class="hr"></span>
+                            <p class="desp2">电商平台解决方案</p>
+                        </div>
+                    </div>
+                    <div class="img-item">
+                        <img src="./images/layout_kuajing_tu.png" />
+                        <div class="cover">
+                            <img src="./images/layout_kuajing_ic.png" />
+                             <p class="desp1">跨境电商解决方案</p>
+                            <span class="hr"></span>
+                            <p class="desp2">电商平台解决方案</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layout-item">
+                <h3 class="layout-title">物流调度解决方案</h3>
+                <span class="hr"></span>
+                <p class="layout-info">云端智能配送调度引擎，对车辆概况，订单信息</p>
+                <p>路况数据等多个维度进行深度数据优化，高效高质输出运输方案，显著降低运输成本。</p>
+                <div class="img-list">
+                    <div class="img-item">
+                        <img src="./images/layout_o2o_tu.png" />
+                        <div class="cover">
+                            <img src="./images/layout_o2o_ic.png" />
+                            <p class="desp1">O2O配送</p>
+                            <span class="hr"></span>
+                            <p class="desp2">物流调度解决方案</p>
+                        </div>
+                    </div>
+                    <div class="img-item">
+                        <img src="./images/layout_shipin_tu.png" />
+                        <div class="cover">
+                            <img src="./images/layout_shipin_ic.png" />
+                             <p class="desp1">食品生鲜配送</p>
+                            <span class="hr"></span>
+                            <p class="desp2">物流调度解决方案</p>
+                        </div>
+                    </div>
+                    <div class="img-item">
+                        <img src="./images/layout_qiye_tu.png" />
+                        <div class="cover">
+                            <img src="./images/layout_qiye_ic.png" />
+                            <p class="desp1">企业生产资料配送</p>
+                            <span class="hr"></span>
+                            <p class="desp2">物流调度解决方案</p>
+                        </div>
+                    </div>
+                    <div class="img-item">
+                        <img src="./images/layout_wuliu_tu.png" />
+                        <div class="cover">
+                            <img src="./images/layout_wuliu_ic.png" />
+                            <p class="desp1">同城物流、跑腿</p>
+                            <span class="hr"></span>
+                            <p class="desp2">物流调度解决方案</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="session team">
+            <h2 class="session-title">Team Introduction</h2>
+            <h3 class="session-subtitle">团队介绍</h3>
+            <p class="team-info first">我们的团队拥有雄厚的电商及互联网经验，主要成员来自老虎证券、美团、网易考拉、天猫等知名企业。
+            </p>
+            <p class="team-info">在美国、印度、南非、深圳、汕尾、广州都设有子公司或办事处。</p>
+            <div class="img-list">
+                <div class="img-item">
+                    <img src="./images/team_meiguo.png" />
+                    <div class="place-item">
+                        <p class="en">United State</p>
+                        <span class="hr"></span>
+                        <p class="ch">美国</p>
+                    </div>
+                </div>
+                <div class="img-item">
+                    <img src="./images/team_shenzhen.png" />
+                    <div class="place-item">
+                        <p class="en">Shen Zhen</p>
+                        <span class="hr"></span>
+                        <p class="ch">深圳</p>
+                    </div>
+                </div>
+                <div class="img-item">
+                    <img src="./images/team_guangzhou.png" />
+                    <div class="place-item">
+                        <p class="en">Guang Zhou</p>
+                        <span class="hr"></span>
+                        <p class="ch">广州</p>
+                    </div>
+                </div>
+                <div class="img-item">
+                    <img src="./images/team_shanwei.png" />
+                    <div class="place-item">
+                        <p class="en">Shan Wei</p>
+                        <span class="hr"></span>
+                        <p class="ch">汕尾</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company-info">
+        <div class="company-main">
+            <div class="c-item">
+                <h3 class="c-name">深圳公司</h3>
+                <span class="hr"></span>
+                <dl>
+                    <dt class="c-info">联系电话：</dt>
+                    <dd class="info-val">020-25215485</dd>
+                     <dt class="c-info">联系地址：</dt>
+                    <dd class="info-val">深圳市南山区南光路二号路2号19楼北</dd>
+                     <dt class="c-info">公司邮箱：</dt>
+                    <dd class="info-val">wanhu@123.com</dd>
+                </dl>
+            </div> 
+            <div class="c-item">
+                <h3 class="c-name">广州公司</h3>
+                <span class="hr"></span>
+                <dl>
+                    <dt class="c-info">联系电话：</dt>
+                    <dd class="info-val">020-25215485</dd>
+                     <dt class="c-info">联系地址：</dt>
+                    <dd class="info-val">深圳市南山区南光路二号路2号19楼北</dd>
+                     <dt class="c-info">公司邮箱：</dt>
+                    <dd class="info-val">wanhu@123.com</dd>
+                </dl>
+            </div>
+             <div class="c-item">
+                <h3 class="c-name">汕尾公司</h3>
+                <span class="hr"></span>
+                <dl>
+                    <dt class="c-info">联系电话：</dt>
+                    <dd class="info-val">020-25215485</dd>
+                     <dt class="c-info">联系地址：</dt>
+                    <dd class="info-val">深圳市南山区南光路二号路2号19楼北</dd>
+                     <dt class="c-info">公司邮箱：</dt>
+                    <dd class="info-val">wanhu@123.com</dd>
+                </dl>
+            </div> 
+            <div class="qrcode">
+                <img src="./images/qrcode.png">
+                <p>扫描二维码关注我们</p>
+            </div>
+        </div>
+    </div>
+     <div class="copyright-info">
+        <p>臻善科技有限公司 © 2018</p>
+     </div>
+            <script src="./lib/jquery-1.11.1.min.js"></script>
+            <script src="./lib/swiper/js/swiper.js"></script>
+            <script type="text/javascript">
+            $(document).ready(function() {
+                var mySwiper = new Swiper('.swiper-container', {
+                    //paginationClickable: true,
+                    initialSlide: 0,
+                    //设置初始化时显示的slide的下标，默认为0
+                    direction: "horizontal",
+                    //设置切换的方向，默认为"horizontal"(水平)，"vertical"(垂直)
+                    speed: 300,
+                    //设置slide的速度，从开始切换到结束切换的时间，单位为ms(毫秒)，默认为300
+                      pagination: '.swiper-pagination',
+                    autoplay:true,
+
+                })
+            });
+            /*var mySwiper = new Swiper('.swiper-container', {
+              autoplay: {
+                delay: 5000,
+              },
+            });*/
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+﻿<CuPlayer>
+	<Player_Set 
+		JcScpBufferTime = "3"
+ 		JcScpVolume = "75"
+		JcScpCode = "utf8"
+ 		JcScpImgDisplay = "no"
+		JcScpAutoHideControl="yes"
+		JcScpControlHideTime="0.5"
+		JcScpControlHeight="40"	
+		JcScpShowList= "no"
+		JcScpAutoRepeat = "no"
+		JcScpsetMode = "1"
+		JcScpAFrontCanClose = "no"
+		JcScpShowRightmenu = "no"
+		JcScpShareMode = "JcScpVideoPath"
+		JcScpLoadbarMode = "0"
+        JcScpLiveMode  = "0"
+	/>
+</CuPlayer>
+
+<!-- 
+播放器常规设置参数
+JcScpBufferTime		缓冲时间	秒
+JcScpVolume		音量调节	 
+JcScpAutoRepeat		是否循环播放	yes/no
+JcScpImgDisplay		是否显示图片	yes/no
+JcScpAutoHideControl		是否自动隐藏控制条	yes/no
+JcScpControlHideTime		隐藏时间值	值为0.0 - 5.0
+JcScpControlHeight		控制条高度	 
+JcScpShowList		视频结束动作控制	yes/no/next/showad
+JcScpsetMode		视频初始播放模式	值为1 / 2 / 3 / 4 分别对应   默认等比模式／铺满拉伸／4：3／16：9
+JcScpCode		播放器编码	gb2312/utf8
+JcScpAFrontCanClose		是否允许关闭前置广告	yes/no
+JcScpShowRightmenu		是否开启右侧菜单	yes/no
+JcScpShareMode		分享模式控制	JcScpVideoPath/FlvID
+JcScpLoadbarMode		进度条模式控制	值为0和1，0表示允许拖动，1为禁拖动进度条
+JcScpLiveMode		点播模式/直播模式控制	值为0和1，0表示点播，1表示直播模式隐藏进度条
+-->
