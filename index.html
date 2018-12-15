@@ -41,18 +41,20 @@
 </head>
 
 <body>
-    <div class="main">
-        <div class="header">
+    <div class="header">
+        <div class="c-header">
             <div class="logo">臻善科技</div>
             <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="index active">首页</a></li>
-                <li class="nav-item"><a href="#">公司简介</a></li>
-                <li class="nav-item"><a href="#">公司业务</a></li>
-                <li class="nav-item"><a href="#">团队风采</a></li>
-                <li class="nav-item"><a href="#">联系我们</a></li>
+                <li class="nav-item"><a href="#" class="index active" title1="index">首页</a></li>
+                <li class="nav-item"><a href="#" title1="profile">公司简介</a></li>
+                <li class="nav-item"><a href="#" title1="layout">公司业务</a></li>
+                <li class="nav-item"><a href="#" title1="team">团队风采</a></li>
+                <li class="nav-item"><a href="#" title1="contact">联系我们</a></li>
             </ul>
         </div>
-        <div class="banner swiper-container">
+    </div>
+    <div class="main">
+        <div class="banner swiper-container" id="index">
             <!-- Slider main container -->
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -66,7 +68,7 @@
             <div class="swiper-pagination">
             </div>
         </div>
-        <div class="session">
+        <div class="session" id="profile">
             <h2 class="session-title">Company Profile</h2>
             <h3 class="session-subtitle">公司简介</h3>
             <div style="overflow: hidden;">
@@ -110,7 +112,7 @@
             </div>
         </div>
         
-        <div class="session">
+        <div class="session" id="layout">
             <h2 class="session-title">Business layout</h2>
             <h3 class="session-subtitle">业务布局</h3>
             <div class="layout-item">
@@ -202,7 +204,7 @@
                 </div>
             </div>
         </div>
-        <div class="session team">
+        <div class="session team" id="team">
             <h2 class="session-title">Team Introduction</h2>
             <h3 class="session-subtitle">团队介绍</h3>
             <p class="team-info first">我们的团队拥有雄厚的电商及互联网经验，主要成员来自老虎证券、美团、网易考拉、天猫等知名企业。
@@ -244,7 +246,7 @@
             </div>
         </div>
     </div>
-    <div class="company-info">
+    <div class="company-info" id="contact">
         <div class="company-main">
             <div class="c-item">
                 <h3 class="c-name">深圳公司</h3>
@@ -288,9 +290,9 @@
             </div>
         </div>
     </div>
-     <div class="copyright-info">
+    <div class="copyright-info">
         <p>臻善科技有限公司 © 2018</p>
-     </div>
+    </div>
             <script src="./lib/jquery-1.11.1.min.js"></script>
             <script src="./lib/swiper/js/swiper.js"></script>
             <script type="text/javascript">
@@ -308,11 +310,14 @@
 
                 })
             });
-            /*var mySwiper = new Swiper('.swiper-container', {
-              autoplay: {
-                delay: 5000,
-              },
-            });*/
+            $('.nav-item a').bind('click',function(){
+                  if($(this).attr('title1')){
+                      var toChar = $(this).attr('title1');       
+                  }　　　　　　　//取得元素并滑动到当前元素
+                  var t_a = $("#" + toChar).offset();      
+                  $("html,body").animate({scrollTop:t_a.top - "60" + "px"}, 500);
+                  return;
+              });
             </script>
 </body>
 
