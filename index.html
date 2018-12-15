@@ -310,12 +310,14 @@
 
                 })
             });
-            $('.nav-item a').bind('click',function(){
+            $('.nav-item a').bind('click',function(e){
                   if($(this).attr('title1')){
                       var toChar = $(this).attr('title1');       
                   }　　　　　　　//取得元素并滑动到当前元素
                   var t_a = $("#" + toChar).offset();      
                   $("html,body").animate({scrollTop:t_a.top - "60" + "px"}, 500);
+                  $('.nav-item a').removeClass("active");
+                  $(e.target).addClass("active");
                   return;
               });
             </script>
