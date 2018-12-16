@@ -295,6 +295,33 @@
                   $(e.target).addClass("active");
                   return;
               });
+            $(window).scroll(function(){
+
+            //获取滚动条滚动的位置
+
+                var top = $(window).scrollTop();
+                if(top > $("#index").offset().top-50){
+                    $('.nav-item a').removeClass("active");
+                    $(".nav-item a[title1='index']").addClass("active");
+                }
+                if(top > $("#profile").offset().top-50){
+                    $('.nav-item a').removeClass("active");
+                    $(".nav-item a[title1='profile']").addClass("active");
+                }
+                if(top > $("#layout").offset().top-50){
+                    $('.nav-item a').removeClass("active");
+                    $(".nav-item a[title1='layout']").addClass("active");
+                }
+                if(top > $("#team").offset().top-50){
+                    $('.nav-item a').removeClass("active");
+                    $(".nav-item a[title1='team']").addClass("active");
+                }
+                 if(top > $("#contact").offset().top-500){
+                    $('.nav-item a').removeClass("active");
+                    $(".nav-item a[title1='contact']").addClass("active");
+                }
+
+            })
             </script>
 </body>
 

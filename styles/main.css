@@ -69,7 +69,7 @@ body{
 
 .swiper-container {
 	width: 100%;
-	height: 500px;
+	height: 480px;
 }
 
 .swiper-slide {
@@ -315,6 +315,7 @@ body{
 
 .team {
 	position: relative;
+	padding-bottom: 84px;
 }
 
 .team .img-list {
@@ -340,8 +341,8 @@ body{
 
 .team .place-item {
 	position: absolute;
-	width: 87%;
-	bottom: 0;
+	width: 88%;
+    bottom: 2px;
 	color: #fff;
 	font-size: 13px;
 	padding: 30px 15px 15px;
