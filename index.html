@@ -271,6 +271,7 @@
             <script src="./lib/jquery-1.11.1.min.js"></script>
             <script src="./lib/swiper/js/swiper.js"></script>
             <script type="text/javascript">
+                var a_click = false;
             $(document).ready(function() {
                 var mySwiper = new Swiper('.swiper-container', {
                     //paginationClickable: true,
@@ -294,6 +295,7 @@
                   $("html,body").animate({scrollTop:t_a.top - "60" + "px"}, 500);
                   $('.nav-item a').removeClass("active");
                   $(e.target).addClass("active");
+                  a_click = true;
                   return;
               });
             $(window).scroll(function(){
@@ -304,26 +306,38 @@
 
             })
             function updateAchor() {
+                if(a_click){
+                    a_click = false;
+                    setTimeout(updateAchor(),800);
+                    
+                    return;
+                }
                  var top = $(window).scrollTop();
-                if(top > $("#index").offset().top-50){
+                
+                if((top > $("#index").offset().top-20) && top<($("#index").offset().top+$("#index").height()-100)){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='index']").addClass("active");
+                    return;
                 }
-                if(top > $("#profile").offset().top-50){
+                if((top > $("#profile").offset().top-20) && top<($("#profile").offset().top+$("#profile").height()-100)){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='profile']").addClass("active");
+                    return;
                 }
-                if(top > $("#layout").offset().top-50){
+                if((top > $("#layout").offset().top-20) && top<($("#layout").offset().top+$("#layout").height()-100)){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='layout']").addClass("active");
+                    return;
                 }
-                if(top > $("#team").offset().top-50){
+                if((top > $("#team").offset().top-20) && top<($("#team").offset().top+$("#team").height()-200)){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='team']").addClass("active");
+                    return;
                 }
-                 if(top > $("#contact").offset().top-500){
+                 if(document.documentElement.scrollHeight == document.documentElement.clientHeight + top){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='contact']").addClass("active");
+                    return;
                 }
             }
             </script>
