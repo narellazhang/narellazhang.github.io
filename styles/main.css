@@ -1,9 +1,12 @@
+body{
+	font-family: MicrosoftYaHei;
+}
 .main {
 
 	/*width: 1280px;
 	margin: 0 auto;
 	text-align: center;*/
-	font-family: MicrosoftYaHei;
+	
 	font-size: 12px;
 	margin-top: 60px;
 }
@@ -386,32 +389,42 @@
 .c-item:first-child {
 	padding-left: 0;
 }
-
+.c-item .c-name{
+	font-size: 16px;
+	font-weight:bold;
+	line-height: 48px;
+}
 .c-item .hr {
-	width: 60px;
-	border-top: 1px solid rgba(247, 251, 255, .5);
+	width: 63px;
+	border-top: 2px solid rgba(247, 251, 255, .5);
 	display: inline-block;
-	margin: 12px 0 20px;
+	margin: 0px 0 14px;
 }
 
 .c-info {
 	width: 26%;
 	display: inline-block;
 	float: left;
-	line-height: 28px;
+	line-height: 20px;
+	font-size: 13px;
+	color:rgba(247,251,255,.8);
+	margin-bottom: 15px;
+	
 }
 
 .info-val {
 	width: 60%;
 	display: inline-block;
 	float: left;
-	line-height: 30px;
+	line-height: 20px;
+	clear: right;
+	margin-bottom: 15px;
 }
 
 .qrcode {
-	width: 15%;
+	width: 13%;
 	float: left;
-	margin: 80px 0  70px;
+	margin: 96px 0  70px;
 	padding-left: 40px;
 }
 
@@ -421,12 +434,14 @@
 
 .qrcode p {
 	text-align: center;
-	line-height: 30px;
+	margin-top: 10px;
+	font-size: 13px;
 }
 
 .copyright-info {
 	background: #2A2C2E;
-	line-height: 50px;
+	line-height: 59px;
 	text-align: center;
 	color: #fff;
+	font-size: 13px;
 }
