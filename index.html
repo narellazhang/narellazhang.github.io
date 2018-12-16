@@ -301,14 +301,14 @@
             $(window).scroll(function(){
 
             //获取滚动条滚动的位置
-                updateAchor();
+               setTimeout(updateAchor(),1000);
                
 
             })
             function updateAchor() {
                 if(a_click){
                     a_click = false;
-                    setTimeout(updateAchor(),800);
+                    //setTimeout(updateAchor(),800);
                     
                     return;
                 }
@@ -319,22 +319,22 @@
                     $(".nav-item a[title1='index']").addClass("active");
                     return;
                 }
-                if((top > $("#profile").offset().top-20) && top<($("#profile").offset().top+$("#profile").height()-100)){
+                if((top > $("#profile").offset().top-150) && top<($("#profile").offset().top+$("#profile").height()-100)){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='profile']").addClass("active");
                     return;
                 }
-                if((top > $("#layout").offset().top-20) && top<($("#layout").offset().top+$("#layout").height()-100)){
+                if((top > $("#layout").offset().top-150) && top<($("#layout").offset().top+$("#layout").height()-100)){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='layout']").addClass("active");
                     return;
                 }
-                if((top > $("#team").offset().top-20) && top<($("#team").offset().top+$("#team").height()-200)){
+                if((top > $("#team").offset().top-100) && top<($("#team").offset().top+$("#team").height()-200)){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='team']").addClass("active");
                     return;
                 }
-                 if(document.documentElement.scrollHeight == document.documentElement.clientHeight + top){
+                 if((top > $("#contact").offset().top-400) &&document.documentElement.scrollHeight == document.documentElement.clientHeight + top){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='contact']").addClass("active");
                     return;
