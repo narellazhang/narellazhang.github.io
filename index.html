@@ -283,7 +283,8 @@
                       pagination: '.swiper-pagination',
                     autoplay:true,
 
-                })
+                });
+                updateAchor();
             });
             $('.nav-item a').bind('click',function(e){
                   if($(this).attr('title1')){
@@ -298,8 +299,12 @@
             $(window).scroll(function(){
 
             //获取滚动条滚动的位置
+                updateAchor();
+               
 
-                var top = $(window).scrollTop();
+            })
+            function updateAchor() {
+                 var top = $(window).scrollTop();
                 if(top > $("#index").offset().top-50){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='index']").addClass("active");
@@ -320,8 +325,7 @@
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='contact']").addClass("active");
                 }
-
-            })
+            }
             </script>
 </body>
 
