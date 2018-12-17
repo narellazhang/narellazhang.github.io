@@ -66,9 +66,11 @@ body{
 
 	border-top: 2px solid #fff;
 }
-
+.banner-bg{
+	background: #002B91;
+}
 .swiper-container {
-	width: 100%;
+	width: 1360px;
 	height: 480px;
 }
 
@@ -132,8 +134,9 @@ body{
 	background: url('./../images/bnt_fengexian.png') no-repeat center;
 	text-align: center;
 	line-height: 30px;
-	font-size: 18px;
-	color:#333;
+	font-size: 20px;
+    color: #333;
+    font-weight: normal;
 }
 
 .session .part {
@@ -163,7 +166,7 @@ body{
 }
 
 .part p {
-	padding-right: 8%;
+	padding-right: 6%;
 	line-height: 29px;
 	color: #666;
 	font-size: 14px;
