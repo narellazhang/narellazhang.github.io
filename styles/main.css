@@ -28,14 +28,16 @@ body{
 }
 
 .header .logo {
-	font-weight: bold;
+	/*font-weight: bold;
 	font-size: 27px;
-	line-height: 60px;
+	line-height: 60px;*/
 	width: 12%;
 	float: left;
 	color:#F7F8F8;
 }
-
+.logo img{
+	margin-top: 16px;
+}
 .nav-list {
 	float: right;
 }
@@ -449,3 +451,6 @@ body{
 	color: #fff;
 	font-size: 13px;
 }
+
+
+
