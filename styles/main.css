@@ -69,11 +69,11 @@ body{
 	border-top: 2px solid #fff;
 }
 .banner-bg{
-	background: #002B91;
+	background-color: #002B91!important;
 }
 .swiper-container {
-	width: 1360px;
-	height: 480px;
+	width: 100%;
+	background-color: #002B91;
 }
 
 .swiper-slide {
@@ -92,11 +92,12 @@ body{
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
+	background-color: #002B91;
 }
 
 .swiper-slide img {
+	
 	width: 100%;
-	height: 100%;
 }
 
 .swiper-pagination-bullet {

@@ -276,6 +276,33 @@
             <script type="text/javascript">
                 var a_click = false;
             $(document).ready(function() {
+                var w = $(window).width();
+                // 图片地址
+                var img_url = './images/banner.png';
+                // 创建对象
+                var img = new Image();
+                // 改变图片的src
+                img.src = img_url;
+                // 判断是否有缓存
+                if(img.complete){
+                     var h = w*img.height/img.width;
+                    $('.swiper-container img').css({"height":h+'px'});
+                }else{
+                    img.onload = function(){
+                        var h = w*img.height/img.width;
+                        $('.swiper-container img').css({"height":h+'px'});
+                        
+                    };
+                }
+
+
+
+
+
+
+
+
+
                 var mySwiper = new Swiper('.swiper-container', {
                     //paginationClickable: true,
                     initialSlide: 0,
