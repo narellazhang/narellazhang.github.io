@@ -35,7 +35,7 @@
                 <!-- Slides -->
                 <div class="swiper-slide" data-swiper-autoplay="5000"><img src="./images/banner.png" />
                 </div>
-                <div class="swiper-slide" data-swiper-autoplay="5000"><img src="./images/banner.png" />
+                <div class="swiper-slide" data-swiper-autoplay="5000"><img src="./images/banner2.jpeg" />
                 </div>
             </div>
             <!-- If we need pagination -->
@@ -343,30 +343,36 @@
                     return;
                 }
                  var top = $(window).scrollTop();
+
                 
                 if((top > $("#index").offset().top-20) && top<($("#index").offset().top+$("#index").height()-100)){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='index']").addClass("active");
+                     $('.header').css({"background-color":'transparent'});
                     return;
                 }
                 if((top > $("#profile").offset().top-150) && top<($("#profile").offset().top+$("#profile").height()-100)){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='profile']").addClass("active");
+                    $('.header').css({"background-color":'#002B91'});
                     return;
                 }
                 if((top > $("#layout").offset().top-150) && top<($("#layout").offset().top+$("#layout").height()-100)){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='layout']").addClass("active");
+                    $('.header').css({"background-color":'#002B91'});
                     return;
                 }
                 if((top > $("#team").offset().top-100) && top<($("#team").offset().top+$("#team").height()-200)){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='team']").addClass("active");
+                    $('.header').css({"background-color":'#002B91'});
                     return;
                 }
                  if((top > $("#contact").offset().top-400) &&document.documentElement.scrollHeight == document.documentElement.clientHeight + top){
                     $('.nav-item a').removeClass("active");
                     $(".nav-item a[title1='contact']").addClass("active");
+                    $('.header').css({"background-color":'#002B91'});
                     return;
                 }
             }
