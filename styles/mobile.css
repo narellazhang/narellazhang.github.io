@@ -82,7 +82,7 @@
 .company-value {
 	width: 90%;
 	margin: 0 auto;
-	height:180px;
+	height:100%;
 	position: relative;
 	bottom: 0;
 }
@@ -96,7 +96,9 @@
 	line-height: 30px;
 	border-bottom: 1px solid #efefef;
 }
-
+.company-value .value-item:last-child{
+	border-bottom: none;
+}
 .value-item .icon {
 	display: inline-block;
 	width: 15%;
