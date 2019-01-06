@@ -135,6 +135,7 @@
 }
 .cover {
 	display:block;
+	padding: 23% 0;
 }
 .cover .hr {
 	width: 24px;
@@ -148,7 +149,8 @@
 	}
 
 	.team .place-item {
-	
+	bottom: 1px;
+	width:90%;
 	font-size: 12px;
 	padding: 10px 5px 5px;
 	
