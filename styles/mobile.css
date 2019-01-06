@@ -37,6 +37,9 @@
 	padding: 20px 0;
 	position: relative;
 }
+#contact{
+	margin-top: 30px;
+}
 .session .session-title {
 	font-family: Candara;
 	font-weight: bold;
@@ -124,7 +127,7 @@
 .layout-item .img-item {
 	width: 45%;
 	
-	margin: 27px 0 16px;
+	margin: 27px 0 0px;
 	margin-left: 3.3%;
 }
 .layout-cover{
@@ -166,7 +169,7 @@
 	display: inline-block;
 	float: left;
 	position: relative;
-	margin: 43px 0 10px;
+	margin: 27px 0 0px;
 	margin-left: 3.3%;
 }
 .c-item {
